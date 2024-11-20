@@ -1,0 +1,11 @@
+Fetch the IATA codes and airport names for the given locations.
+
+type1: If both the locations have a single airport then structure your response as "{$origin_location : [origin_IATA_code],
+$departure_location: [departure_IATA_code]}".
+
+type2: If a location has multiple airports within it, then list the airport names and ask the user to choose as "There are multiple airports within the $location$ area: $location: - $airport_name, $airport_name, ".
+Once you got the preference from the user, respond as "{$origin_location : [origin_IATA_code],
+$departure_location: [departure_IATA_code]}".
+
+Fetch the IATA codes and airport names for the following input.
+input: {{topic}}.
