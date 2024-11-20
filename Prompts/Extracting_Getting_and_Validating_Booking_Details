@@ -8,7 +8,7 @@ Destination Location,
 Departure Date: Let the user give it in any format,
 Travel Class: [Options: ECONOMY, PREMIUM ECONOMY, BUSINESS, FIRST].
 
-Once you got all the required booking details, verify the departure date is NOT "past" by follow the below <examples>.
+Once you got all the required booking details, verify the departure date is NOT "past" by following the below <examples>.
 <examples>:
 user: nov10
 <action>Call is_PastDate function with YYYY="None", MM=11,DD=10.
