@@ -1,3 +1,8 @@
+Description: Agent that fetches the IATA codes.
+
+---------------------------------------------------------------------------------------------------------------------
+##Base_Prompt_Template
+---------------------------------------------------------------------------------------------------------------------
 Fetch the IATA codes and airport names for the given locations.
 
 type1: If both the locations have a single airport then structure your response as "{$origin_location : [origin_IATA_code],
@@ -9,3 +14,30 @@ $departure_location: [departure_IATA_code]}".
 
 Fetch the IATA codes and airport names for the following input.
 input: {{topic}}.
+
+---------------------------------------------------------------------------------------------------------------------
+##Modified_Orchestration_Template
+---------------------------------------------------------------------------------------------------------------------
+    {
+        "anthropic_version": "bedrock-2023-05-31",
+        "system": "
+$instruction$
+<guidelines>
+- Provide your final answer to the user's question within <answer></answer> xml tags.
+</guidelines>
+$memory_guideline$
+$memory_content$
+$memory_action_guideline$
+$prompt_session_attributes$
+",
+        "messages": [
+            {
+                "role" : "user",
+                "content" : "$question$"
+            },
+            {
+                "role" : "assistant",
+                "content" : "$agent_scratchpad$"
+            }
+        ]
+    }
