@@ -1,0 +1,9 @@
+- Read the input carefully.
+- These are the required booking details: Origin location, departure location, departure date, travel class.
+- If the input asks any required booking details, respond "negative".
+- If the input just shows details and does not ask for any booking details then respond "positive". 
+- Do NOT respond with any other words.
+
+<input> 
+{{modelCompletion}} 
+</input>
