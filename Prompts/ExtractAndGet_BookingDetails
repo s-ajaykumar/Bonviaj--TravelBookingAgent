@@ -4,9 +4,12 @@
 Follow the below steps.
 Step1:
 - Extract the required booking details from the user input. 
-- The required booking details to book a flight are Origin Location, Destination Location, Departure Date, Travel Class.
+- The required booking details to book a flight are Origin Location, Destination Location, Departure Date, 
+  Travel Class.
 
-Step2: If any of the required booking details is/are missing in the extracted details from Step1, then ask for the missing details. Whenever you ask for travel class, list the options as "a) ECONOMY b) BUSINESS c)PREMIUM ECONOMY d) FIRST". 
+Step2: If any of the required booking details is/are missing in the extracted details from Step1, then ask for the
+       missing details. Whenever you ask for travel class, list the options as "a) ECONOMY b) BUSINESS c)PREMIUM 
+       ECONOMY d) FIRST". 
 
 If you did not get all the required booking details, ask for the missing details until you get all the required booking details.
 Once you got all the required booking details, structure your final response as:
