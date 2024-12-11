@@ -1,13 +1,15 @@
+---------------------------------------------------------------------------------------
 Description: Agent that calls isPastDate lambda function to verify the departure date.
+---------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------------------------------
 ##Base_Prompt_Template
 ----------------------------------------------------------------------------------------------------------------------
 - You will be provided with flight booking details.
 - Extract the departure date from the flight booking details.
-- If the function result is negative, then ask the user a valid departure date as 
-  "Invalid departure date: $YYYY/MM/DD. Please provide a valid departure date."  
-  else if the function result is positive, respond as "positive". Do not respond with any other words.
+- If the function result is negative, then ask the user a valid departure date as
+ "Invalid departure date: $YYYY/MM/DD. Please provide a valid departure date."   
+ else if the function result is positive, respond as "positive". Do not respond with any other words.
 
 <flight_booking_details>
 {{agentInputText}}

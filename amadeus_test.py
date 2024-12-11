@@ -77,12 +77,12 @@ def lambda_handler(event):
         
         response = amadeus.shopping.flight_offers_search.get(
             originLocationCode = "IXM",
-            destinationLocationCode = "MAA",
-            departureDate = "2024-12-20",
+            destinationLocationCode = "TRZ",
+            departureDate = "2024-12-12",
             adults = 1,
             children = 1,
             currencyCode = "INR",
-            travelClass = "FIRST"
+            travelClass = "ECONOMY"
         )
         if len(response.data) == 0:
             print("No available flights from the given locations on the given date.")

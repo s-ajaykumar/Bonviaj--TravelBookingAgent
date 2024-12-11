@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------------------------------
+Description: Classifies whether the there are multiple airports (or) a single airport in the given locations
+---------------------------------------------------------------------------------------------------
+
+
+Read the input carefully and classify into "positive" (or) "negative".
+If the input just shows a json object then respond with "positive". Else if the input asks to choose a airport then respond with "negative". Don't respond with any other words.
+<input>
+{{topic}}
+</input>

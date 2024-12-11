@@ -55,13 +55,13 @@ def get_cheapest_flights(response):
         
 try:
     response = amadeus.shopping.flight_offers_search.get(
-        originLocationCode = 'IXM',
-        destinationLocationCode = 'LAS',
-        departureDate = '2024-12-09',
+        originLocationCode = 'LAS',
+        destinationLocationCode = 'LAX',
+        departureDate = '2024-12-30',
         adults = 1,
-        children = 7,
+        children = 0,
         currencyCode = "INR",
-        travelClass = "FIRST"
+        travelClass = "ECONOMY"
     )
     if len(response.data) == 0:
         print("No available flights")

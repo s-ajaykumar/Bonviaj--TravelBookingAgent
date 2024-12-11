@@ -1,0 +1,20 @@
+-----------------------------------------------------------------------------------------
+Description: Prompt that extracts locations from the input and fetches it's IATA codes.
+-----------------------------------------------------------------------------------------
+
+Fetch the IATA codes and airport names for the given locations.
+
+type1: If both the locations have a single airport then structure your response as a json object:
+ {"origin" : "origin_IATA_code",
+"destination" : "destination_IATA_code",
+"departureDate" : "YYYY-MM-DD",
+"adults" : numberOfAdults,
+"children" = numberOfChildren,
+"currencyCode" = "INR",
+"travelClass" = "travelClass-UserProvided"}
+
+type2: If a location has multiple airports within it, then list the airport names and ask the user to choose.
+
+Remember, if type a, then only respond with the given json structure. No extra words other than that.
+
+{{modelResponse}}

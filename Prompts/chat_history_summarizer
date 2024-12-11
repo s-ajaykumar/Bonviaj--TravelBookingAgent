@@ -1,0 +1,17 @@
+-----------------------------------------------------------------------------------------
+Description: Extracts the recent flight booking request from the chat history
+-----------------------------------------------------------------------------------------
+
+
+
+
+
+You will be provided with a chat history which is about flight booking and it may contain conversations related to a same flight booking request (or) different flight booking requests. Your task is to read through the chat history carefully and return the last flight booking request with all it's conversations as:
+"
+chat_history: 
+
+"
+
+<chat_history>
+{{chat_history}}
+</chat_history>

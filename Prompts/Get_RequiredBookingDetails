@@ -1,0 +1,29 @@
+---------------------------------------------------------------------------------------
+Description: Extracts and gets the required flight booking details from the user.
+---------------------------------------------------------------------------------------
+
+Read through the user query carefully then extract the necessary flight booking details. 
+The necessary flight booking details are Origin and destination locations, departure Date, travel Class and the number of Adults and children but the number of children is optional. If asking for departureDate, let the user may give it any format and keep in your mind that just month and day is enough. If asking for travel class, list the travel class options with the option letter for ease of selection. The travel class options are a) ECONOMY b) BUSINESS c)PREMIUM ECONOMY d) FIRST. The user may give the option letter (or) the option itself. Anything is fine. Just accept it. If the user didn't give any option, then don't ask for it and set it as "ECONOMY". If asking for number of adults (or) children, specify the age range(Adults: >=12, Children: 2 - 11). 
+
+Before asking questions to the user, follow the below guidelines.
+<before_asking_questions_guidelines>
+- Ask questions only if booking detail(s) is/are still missing else respond only with the following structure:
+    {"origin" : "origin",
+    "destination" : "destination",
+    "departureDate" : "YYYY-MM-DD",
+    "adults" : numberOfAdults,
+    "children" = numberOfChildren,
+    "currencyCode" = "INR",
+    "travelClass" = "travelClass"}. No extra words.
+- Don't ask for confirmation of the details. Just respond with the above structure. No extra words.
+</before_asking_questions_guidelines>
+    
+Follow the guidelines while asking questions.
+<guidelines>
+- Ask them in a single go.
+- Don't respond with the structure specified above.
+</guidelines>
+
+{{chat_history}}
+
+User: {{query}}

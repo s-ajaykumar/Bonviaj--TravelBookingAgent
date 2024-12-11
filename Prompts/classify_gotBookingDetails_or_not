@@ -1,9 +1,9 @@
-- Read the input carefully.
-- These are the required booking details: Origin location, departure location, departure date, travel class.
-- If the input asks any required booking details, respond "negative".
-- If the input just shows details and does not ask for any booking details then respond "positive". 
-- Do NOT respond with any other words.
+-----------------------------------------------------------------------------------------
+Description: Classifies whether it got all the required flight booking details (or) not.
+-----------------------------------------------------------------------------------------
 
-<input> 
-{{modelCompletion}} 
-</input>
+
+Read through the user input carefully and classify it into whether it asks flight booking detail(s) (or) not.
+If it asks for flight booking detail(s) then respond as "negative" else if it just shows the booking details then respond as "positive". Don't respond with any other words.
+
+{{modelCompletion}}

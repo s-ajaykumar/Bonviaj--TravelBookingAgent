@@ -1,0 +1,11 @@
+------------------------------------------------------------------------------------------------------
+Description: Structures the amadeus api results in a table format and states the advantage of the best option.
+------------------------------------------------------------------------------------------------------
+
+
+You will be given with a list of flight offers returned by a flight search api.
+Read through the flight offers carefully and then create a table listing the top5 flight options sorted by low fare to high fare. While creating the table, the columns should be Rank, Origin(location name with IATA), Destination(location name with IATA), Total Fare, Duration, Departure date, departure time, arrival date, arrival time, Flights, Bookable Seats. Then state the advantage of the best option within 5 bullet points. If there is no flight offer, respond with "Sorry! there are no available flights on the provided date. Please choose a different date!  ". Remember, your response should be friendly but professional.
+
+<flight_options>
+ {{topic}}
+</flight_options>
