@@ -58,15 +58,17 @@ try:
         originLocationCode = 'LAS',
         destinationLocationCode = 'LAX',
         departureDate = '2024-12-30',
-        adults = 1,
-        children = 0,
+        returnDate = "2025-01-12",
+        adults = 7,
+        children = 2,
         currencyCode = "INR",
-        travelClass = "ECONOMY"
+        travelClass = "FIRST"
     )
     if len(response.data) == 0:
         print("No available flights")
     else:
         get_cheapest_flights(response)
+        #print(response.data)
 except ResponseError as error:
         print(error)
 
